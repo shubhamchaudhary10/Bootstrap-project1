@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"</head>
+    <style>
+        .carousel-item img{
+            height: 75vh;
+        }
+        .card img{
+            width: 100%;
+            height: 30vh;
+        }
+    @media(max-width:650px)
+    {
+        .carousel-item img{ height:40vh;} 
+        .card{ margin: auto;}   
+        }
+    /* @media(max-width:650px)
+    {
+        
+    } */
+
+    </style>
+  <body>
+    <!-- header area start -->
+    <header class="p-2" style="background-color: tomato;">
+        <div class="container">
+            <a href="#" class="p-2 text-white text-decoration-none" style="font-size: 1.3rem;">Oppo Mobiles Pvt Ltd</a>
+        </div>
+    </header>
+    <!-- #header area end -->
+
+    <!-- navigation area start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Mobiles</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+                  <li><a class="dropdown-item" href="#">Tablets</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Wireless Headphones</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SmartPhones New Series
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Series 1</a></li>
+                  <li><a class="dropdown-item" href="#">Series 2</a></li>
+                  <li><a class="dropdown-item" href="#">Series 3</a></li>
+                  <li><a class="dropdown-item" href="#">Series 4</a></li>
+                  <li><a class="dropdown-item" href="#">Series 5</a></li>
+                  <li><a class="dropdown-item" href="#">Series 6</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Upcoming New Series</a></li>
+                </ul>
+              </li> 
+
+              <li class="nav-item">
+                    <a class="nav-link active">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="nav">
+                <li  class="nav-item"><a href="" class="nav-link btn btn-primary text-white mx-2">Register Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- navigation area end -->
+
+    <!-- banner area start -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/image1.jpg" class="d-block w-100" alt="image1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-white display-3">First mobile slide</h5>
+              <p class="text-white">Some representative placeholder content for the first mobile.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/image2.jpg" class="d-block w-100" alt="image2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-white display-3">Second mobile slide</h5>
+              <p class="text-white">Some representative placeholder content for the second mobile.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/image3.jpg" class="d-block w-100" alt="image3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-white display-3">Third mobile slide</h5>
+              <p class="text-white">Some representative placeholder content for the third mobile.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- banner area end -->
+
+    <!-- article area start -->
+    <div class="container bg-light border rounded my-2">
+        <h1 class="text-center" style="color: navy;">Upcoming Mobiles Specification</h1>
+        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eum autem placeat recusandae nihil fugiat saepe similique blanditiis, est porro commodi ipsum accusamus natus cum hic, mollitia unde dolore voluptatum dolor voluptates. Alias possimus totam aspernatur aut. Magni, amet saepe. Architecto esse optio minus hic eligendi sequi! Voluptate animi veniam aspernatur rerum iusto est reiciendis, similique aut quo dignissimos, tenetur obcaecati autem numquam ipsum ipsa recusandae cupiditate modi natus? Necessitatibus, deserunt! Minus pariatur provident officia cumque beatae mollitia quia aperiam, facilis magnam, maxime culpa voluptatibus assumenda animi nesciunt voluptatem suscipit laborum tenetur debitis. Vel at, eius commodi sequi dolore a soluta adipisci consequuntur modi. Porro sequi, quaerat ex vero facilis soluta nostrum est dolore! Tenetur aspernatur corporis nisi expedita laborum tempora dolorem tempore beatae repellat ad recusandae ducimus ab sunt inventore earum, aliquid eaque animi quaerat, soluta voluptatem rerum necessitatibus cum excepturi? Veritatis ullam in soluta reiciendis itaque nihil sit fugit autem minima ad optio corporis fuga velit, cupiditate officia. Illo voluptates quis sunt tempore id reprehenderit accusantium debitis iure numquam officia quidem odio minus placeat nihil aut omnis, quasi quae tenetur dolorum eos! Vitae veritatis ad hic, vero et ipsa perspiciatis quos voluptates nisi ullam! Mollitia, quis nulla? Atque, inventore! Labore deleniti exercitationem a quae ad voluptatibus, natus quidem possimus sed libero enim aliquam eius, accusamus praesentium. Ullam blanditiis vel odit, ducimus quo omnis veniam magni perferendis! Soluta, a? Natus reiciendis praesentium id labore, illo unde optio deleniti nulla quibusdam tempore quis vitae, cupiditate ducimus cumque. Hic soluta, inventore culpa iste ipsa reprehenderit exercitationem, quibusdam blanditiis distinctio quidem doloremque, saepe molestias? Repellendus eos magni reiciendis quae illo harum ipsam quod ea non incidunt cumque reprehenderit veniam animi inventore, a natus recusandae, laboriosam aperiam minus? Illo enim, id dolore sit perspiciatis autem voluptatibus, maxime culpa aliquid a ut repellat quae quos qui reprehenderit delectus harum fuga. Voluptatibus itaque eius fugit a iusto asperiores, fuga aliquid mollitia! Molestiae minima asperiores perspiciatis, sapiente nisi sunt quidem temporibus exercitationem ex, saepe at voluptate praesentium dolorum vel maxime eos nam unde eligendi iusto? Inventore, delectus exercitationem accusamus est fugiat veniam repellat non repellendus facere! Fuga quod quos accusamus repudiandae, eaque repellendus labore nemo ea perspiciatis minus. Consectetur cumque adipisci minus blanditiis asperiores quod delectus reiciendis ad ullam? Obcaecati voluptatum eum ipsam alias cumque, sed earum, optio nihil blanditiis deleniti nisi labore debitis dolor officia quasi, aut quo corrupti. Reiciendis atque enim iste blanditiis commodi illo sit dignissimos itaque quae dolorem at placeat nostrum non, quasi eligendi ipsam libero quam quidem ratione harum laborum asperiores, qui accusamus sint. Reprehenderit, natus maiores hic molestiae animi optio! Reiciendis quae iure eaque iusto, quod placeat hic pariatur accusantium ab unde nesciunt libero deserunt sequi. Similique culpa commodi a animi et! Ullam omnis quo nesciunt fugit libero esse saepe tempore laudantium iste officiis minima sunt reiciendis cupiditate id explicabo facilis atque tenetur, voluptates eligendi cumque nemo repellendus. Facere dolores architecto possimus quisquam. Rerum iure consectetur ipsum quibusdam obcaecati quidem? Unde eos maiores accusamus deserunt quo, aspernatur totam nobis expedita dolor architecto, id laborum quasi non fuga saepe provident vero. Iste, accusamus commodi sunt quisquam nostrum eum eos impedit quasi ipsam magnam vel autem libero illum sequi dolores quod, minima numquam est dolore similique dignissimos placeat possimus blanditiis. Numquam quisquam et laudantium ratione, assumenda deserunt fugit ab magni reprehenderit ducimus reiciendis repellat possimus sapiente dicta repellendus ipsum quo? Quisquam dolor quod asperiores molestiae autem in ipsa dignissimos temporibus iusto, velit illo omnis itaque nihil accusantium eaque natus modi voluptatibus, ea consectetur esse voluptas repellendus placeat quasi! Culpa deleniti sequi quis repellat exercitationem facilis ab modi alias reprehenderit fuga, non, optio similique voluptates totam quo eos dolorem. Asperiores in error voluptates dolores, eveniet incidunt esse vero ex accusamus quis repudiandae quos saepe fugit reiciendis blanditiis! Nihil quam facilis voluptas explicabo esse corporis, sint repellendus deleniti, error, excepturi maiores! Earum rerum at doloremque hic ipsa aliquid deserunt laudantium quos? Nostrum est minima sapiente nisi pariatur exercitationem voluptate ab! Obcaecati fuga, cumque tenetur vero esse accusamus, quis consequatur incidunt repellat officiis mollitia quibusdam eos libero enim, quas dolore? Aliquam ex accusantium ea voluptas, non sed obcaecati veritatis impedit facilis, quos consequuntur.</p>
+    </div>
+    <!-- article area end -->
+
+    <!-- cards area start -->
+    <div class="container ">
+        <div class="row my-2">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/slide1.jpg" class="card-img-top" alt="slide1">
+                    <div class="card-body">
+                      <h5 class="card-title">Mobile title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">New Mobile 1</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/slide2.jpg" class="card-img-top" alt="slide2">
+                    <div class="card-body">
+                      <h5 class="card-title">Headphones title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">New Mobile 2</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/slide3.jpg" class="card-img-top" alt="slide3">
+                    <div class="card-body">
+                      <h5 class="card-title">PowerBank title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">New Mobile 3</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/slide4.jpg" class="card-img-top" alt="slide4">
+                    <div class="card-body">
+                      <h5 class="card-title">Tablets title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">New Mobile 4</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- cards area end -->
+
+    <!-- article area start -->
+    <div class="container bg-light border rounded my-4">
+        <h1 class="text-center" style="color: red;">Overviews</h1>
+        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eum autem placeat recusandae nihil fugiat saepe similique blanditiis, est porro commodi ipsum accusamus natus cum hic, mollitia unde dolore voluptatum dolor voluptates. Alias possimus totam aspernatur aut. Magni, amet saepe. Architecto esse optio minus hic eligendi sequi! Voluptate animi veniam aspernatur rerum iusto est reiciendis, similique aut quo dignissimos, tenetur obcaecati autem numquam ipsum ipsa recusandae cupiditate modi natus? Necessitatibus, deserunt! Minus pariatur provident officia cumque beatae mollitia quia aperiam, facilis magnam, maxime culpa voluptatibus assumenda animi nesciunt voluptatem suscipit laborum tenetur debitis. Vel at, eius commodi sequi dolore a soluta adipisci consequuntur modi. Porro sequi, quaerat ex vero facilis soluta nostrum est dolore! Tenetur aspernatur corporis nisi expedita laborum tempora dolorem tempore beatae repellat ad recusandae ducimus ab sunt inventore earum, aliquid eaque animi quaerat, soluta voluptatem.</p>
+    </div>
+    <!-- article area end -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
